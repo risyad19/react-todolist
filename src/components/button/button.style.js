@@ -1,33 +1,35 @@
 import { css } from "@emotion/core";
 
-export const button  = ({color, align}) => {
+export const button = ({ color, align, theme }) => {
   let textcolor;
+  const {
+    color: { primary }
+  } = theme;
 
-  switch(color)
-  {
+  switch (color) {
     case "black":
-      textColor = '#484848';
+      textColor = primary.black;
       break;
     case "red":
-      textColor = '#e06262';
+      textColor = primary.red;
       break;
     default:
-      textColor = '#484848';
+      textColor = primary.black;
   }
 
   return css`
-  width: 24%;
-  font-size: 1.8rem;
-  font-family: "Bungee", sans-serif;
-  color: ${textColor};
-  text-align: ${align};
-  
-  padding: 16px;
-  cursor: pointer;
-  
-  background: unset;
-  border: unset;
-  outline: unset;
-  text-align: ${align};
+    width: 24%;
+    font-size: 1.8rem;
+    font-family: "Bungee", sans-serif;
+    color: ${textColor};
+    text-align: ${align};
+
+    padding: 16px;
+    cursor: pointer;
+
+    background: unset;
+    border: unset;
+    outline: unset;
+    text-align: ${align};
   `;
-}
+};
