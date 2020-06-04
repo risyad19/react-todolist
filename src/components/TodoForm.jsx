@@ -12,6 +12,12 @@ const TodoForm = ({ addTodo, showAdd }) => {
       return;
     }
 
+    if (value.length > 40) {
+      alert("Please sorter a todo text");
+      setValue("");
+      return;
+    }
+
     addTodo(value);
     // alert(value);
     setValue("");
@@ -34,8 +40,6 @@ const TodoForm = ({ addTodo, showAdd }) => {
   } else {
     return null;
   }
-
-  // console.log("value", value);
 };
 
 TodoForm.propTypes = {
