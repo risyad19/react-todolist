@@ -12,10 +12,22 @@ const TodoList = () => {
     { text: "Learning ReactJS with Wegodev" }
   ]);
 
+  const [showAdd, setShowAdd] = useState(false);
+
+  const addTodo = value => {
+    const addedTodo = [...todos, { text: value }];
+
+    setTodos(addedTodo);
+  };
+
+  const showAddToggle = () => setShowAdd(!showAdd);
+
+  // console.log("showAdd", showAdd);
+
   return (
     <Paper>
-      <Header />
-      <TodoForm />
+      <Header showAddToggle={showAddToggle} />
+      <TodoForm addTodo={addTodo} />
       <Todos todos={todos} />
     </Paper>
   );
