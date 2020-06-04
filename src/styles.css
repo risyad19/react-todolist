@@ -29,7 +29,7 @@ body. html {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.container {
+/* .container {
   width: 500px;
   height: 700px;
   background-color: #f2eecb;
@@ -44,7 +44,7 @@ body. html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
+} */
 
 /* .header {
   display: flex;
@@ -62,7 +62,7 @@ body. html {
   text-transform: lowercase;
 } */
 
-.add {
+/* .add {
   padding: 16px;
 }
 
@@ -101,23 +101,23 @@ body. html {
 
 .add-btn.main-black-color:active {
   text-shadow: 1px 1px 2px var(--main-black-color);
-}
+} */
 
-.todos {
+/* .todos {
   display: flex;
   flex-direction: column;
 
   min-height: 500px;
-}
+} */
 
-.todo {
+/* .todo {
   position: relative;
 
   flex: 1 0 auto;
   text-align: center;
 
   max-height: 34px;
-  /* min-height: 34px; */
+  min-height: 34px;
   margin: 16px 0 0;
   font-family: "Homemade Apple", sans-serif;
   font-size: 24px;
@@ -131,9 +131,9 @@ body. html {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-}
+} */
 
-.todo-placeholder-text {
+/* .todo-placeholder-text {
   font-family: "Homemade Apple", sans-serif;
   font-size: 24px;
   text-align: center;
@@ -143,4 +143,4 @@ body. html {
 .add-button-placeholder-text {
   font-family: "Bungee", sans-serif;
   font-size: 24px;
-}
+} */

@@ -2,8 +2,8 @@ import React, { useState } from "react";
 // import "./styles.css";
 import Paper from "../components/paper/Paper";
 import Header from "../components/header/Header";
-import TodoForm from "../components/TodoForm";
-import Todos from "../components/Todos";
+import TodoForm from "../components/todoform/TodoForm";
+import Todos from "../components/todos/Todos";
 
 const TodoList = () => {
   const [todos, setTodos] = useState([
