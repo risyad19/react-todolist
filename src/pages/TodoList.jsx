@@ -15,9 +15,13 @@ const TodoList = () => {
   const [showAdd, setShowAdd] = useState(false);
 
   const addTodo = value => {
-    const addedTodo = [...todos, { text: value, isCompliet: false }];
+    if (todos.length < 8) {
+      const addedTodo = [...todos, { text: value, isCompliet: false }];
 
-    setTodos(addedTodo);
+      setTodos(addedTodo);
+    } else {
+      alert("Only 10 Todo is Allowed");
+    }
   };
 
   const complietTodo = index => {
@@ -29,7 +33,7 @@ const TodoList = () => {
 
   const showAddToggle = () => setShowAdd(!showAdd);
 
-  console.log("todos", todos);
+  // console.log("todos", todos);
 
   return (
     <Paper>
